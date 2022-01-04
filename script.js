@@ -10,7 +10,7 @@ function game(playRound) {
   while (i < 5) {
     function playRound(playerSelection, computerSelection) {
       if (playerSelection === "rock" && computerSelection === "paper") {
-        ("You Lose! Paper beats Rock");
+        return "You Lose! Paper beats Rock";
       } else if (
         playerSelection === "paper" &&
         computerSelection === "scissors"
