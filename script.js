@@ -10,23 +10,17 @@ let playerScore = 0;
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === "rock" && computerSelection === "paper") {
-    console.log((computerScore += 1));
-    return "You Lose! Paper beats Rock";
+    return `You Lose! Paper beats Rock ${(computerScore += 1)}`;
   } else if (playerSelection === "paper" && computerSelection === "scissors") {
-    console.log((computerScore += 1));
-    return "You Lose! Scissors beats Paper";
+    return `You Lose! Scissors beats Paper ${(computerScore += 1)}`;
   } else if (playerSelection === "scissors" && computerSelection === "rock") {
-    console.log((computerScore += 1));
-    return "You Lose! Rock beats Scissors";
+    return `You Lose! Rock beats Scissors ${(computerScore += 1)}`;
   } else if (playerSelection === "scissors" && computerSelection === "paper") {
-    console.log((playerScore += 1));
-    return "You Win! Scissors beats Paper";
+    return `You Win! Scissors beats Paper ${(playerScore += 1)}`;
   } else if (playerSelection === "paper" && computerSelection === "rock") {
-    console.log((playerScore += 1));
-    return "You Win! Paper beats Rock";
+    return `You Win! Paper beats Rock ${(playerScore += 1)}`;
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
-    console.log((playerScore += 1));
-    return "You Win! Rock beats Scissors";
+    return `You Win! Rock beats Scissors ${(playerScore += 1)}`;
   } else if (playerSelection === computerSelection) {
     return "Equal!!!";
   } else {
