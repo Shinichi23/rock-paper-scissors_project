@@ -10,16 +10,20 @@
 </head>
 
 <body>
-    <div>
-        <button class='player' id="rock">Rock</button>
-        <button class='player' id="paper">Paper</button>
-        <button class='player' id="scissors">Scissors</button>
-    </div>
-    <div>
-        <button></button>
-        <button></button>
-    </div>
+    <div id="container">
+        <div>
+            <button class='player' id="rock">Rock</button>
+            <button class='player' id="paper">Paper</button>
+            <button class='player' id="scissors">Scissors</button>
+        </div>
+        <div>
+            <button id='playerScore' disabled></button>
+            <button id='computerScore' disabled></button>
+        </div>
 
+        <h1 id ="score"></h1>
+    </div>
+    <button id="resetGame" type="reset">Reset Game</button>
 </body>
 
 </html>
