@@ -5,25 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Janken</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    
 </head>
 
 <body>
+    
+    <!--
     <div id="container">
         <div>
             <button class='player' id="rock">Rock</button>
             <button class='player' id="paper">Paper</button>
             <button class='player' id="scissors">Scissors</button>
         </div>
+        <br>
+        -->
+    
         <div>
-            <button id='playerScore' disabled></button>
-            <button id='computerScore' disabled></button>
+            <h1 id='playerScore'></h1>
+            <h1 id='computerScore'></h1>
         </div>
 
-        <h1 id ="score"></h1>
+        <h1 id ="winner"></h1>
+
+     <hr>   
+        
+    <!--</div> -->
+
+    <!-- ------------------------------------------------------------ -->
+    <div class="container">
+    <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/rock.jpg" alt="Rock image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <button  class="player button is-primary" id="rock">ROCK ぐう</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/scissors.jpg" alt="Scissors image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+                <button  class="player button is-primary" id="scissors">SCISSORS ちょき</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="images/paper.jpg" alt="Paper image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <button  class="player button is-primary" id="paper">PAPER ぱあ</button>
+            </div>
+          </div> 
+        </div>
+      </div>
     </div>
-    <button id="resetGame" disabled type="reset">Reset Game</button>
+    <br>
+    <hr>
+    <button class="button is-dark" id="resetGame" disabled type="reset">Reset Game</button>
 </body>
 
 </html>
